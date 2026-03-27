@@ -1,20 +1,21 @@
-name = "penguien"
-age = 15
-is_student = True
-weight = 38.5
-print("Name:",name)
-print("Data type of name is", type(name))
-print("Age:",age)
-print("Data type of age is",type(age))
-print("is_student:",is_student)
-print("Data type of is_student is",type(is_student))
-print("weight:",weight)
-print("Data type of weight is",type(weight))
+num1 = 45
+num2 =3
+print("Number 1",num1)
+print("Number 2",num2)
+print("Addition :",num1+num2)
+print("Difference :",num1-num2)
+print("Product :",num1*num2)
+print("Divison :",num1/num2)
+print(" Floor Divison :",num1//num2)
+print("Modules Operation :",num1%num2)
+print("Square :",num2*num2)
+print("Square Root :",num2**0.5)
 
-print("\n After type casting....")
-age=str(age)
-print(age)
-print("Data type of age is",type(age))
-weight=int(weight)
-print(weight)
-print("Data type of weight is",type(weight))
+print("Equal ? :",num1==num2)
+print("Number 1 greater ? :",num1>num2)
+print("Number 2 greater ? :",num1<num2)
+print("Not Equal ? :",num1!=num2)
+
+result = num1/2+num2**2+10
+print("Result of Given Equation is : ",result)
+
