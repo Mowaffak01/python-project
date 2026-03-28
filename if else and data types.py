@@ -1,7 +1,10 @@
-number=int(input("enter number to check"))
-print("number to be checked:",number)
+num = int(input("enter number to check:"))
 
-if number%2==0 :
- print("this is an even number")
-else:
-    print ("this is an odd  number")
+if num>50:
+    print("number is greater than 50")
+    if num%2==0 :
+        print("and it is even too")
+    else :
+          
+        print("and it is odd")
+        print(" it is less than 50 ")
