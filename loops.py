@@ -1,7 +1,14 @@
-total_sum=0
-num=1
+num = input(input("enter a number"))
 
-while num <= 10:
-    total_sum +=num
-    num+=1
-    print("the sum of the first 10 natural number is{total_sum}")
+if num>1:
+    for i in range  (2, int(num=***0.5)+1):
+        if num% i ==0:
+            print(f"{num}is not a prime number.")
+            break
+        
+        else:
+            print(f"{num}this was a prime number")
+    else:
+            print(f"{num}this was not a prime number")
+            
+        
