@@ -1,25 +1,20 @@
-class cat:
+class computar:
     
-        def __init__(self,name,age):
-            self.name = name
-            self.age = age
+        def __init__(self):
+            self.maxprice = 900
             
-        def into(self):
-            print(f"i am a cat my name is {self.name} and i am {self.age} years old")
-        def make_sound(self):
-            print("meow")
-class dog:
-          def __init__(self,name,age):
-            self.name = name
-            self.age = age
-          def into(self):
-            print(f"i am a dog my name is {self.name} and i am {self.age} years old")
-          def make_sound(self):
-            print("bark")
+        def sell(self):
+            print("price.{}".formal(self.__maxprice))
+        def setmaxprice(self,price):
+            self.__maxprice - price
             
-cat1 = cat("doto",2.5)
-dog1 = dog("tyson",8)  
+c = computar()
+c.sell()
 
-for animal in(cat1,dog1):
-    animal.make_sound()
-    animal.into()      
+c.__maxprice = 1000
+c.sell()
+
+
+c.setmaxprice(1000)
+c.sell()
+            
