@@ -1,16 +1,9 @@
-file_read = open('Codingal.txt','r')
-print("file in read mode")
-print(file_read.read())
-file_read.close
+file1= open('Codingal.txt','r')
+file2= open('mowaffa.txt','r')
 
-
-file_write = open('Codingal.txt','w')
-file_write.write("file in write mode")
-file_write.write("Hi i am a penguin andd i am 1yr old")
-file_write.close()
-
-
-file_append = open('Codingal.txt','a')
-file_append.write("file in append mode")
-file_append.write("Hi i am a penguin andd i am 1yr old")
-file_append.close()
+for line in file1.readlines():
+     if not ( linestartswith ('Coding')):
+         print (line)
+         file2.write(line)
+file2.close
+file1.close
