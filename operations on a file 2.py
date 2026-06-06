@@ -1,15 +1,11 @@
-new_file =('new_file.txt','x')
-new_file.close()
-
-import os
-print("checking if file exists or not........")
-if os.path.exists("my_file.txt"):
-    os.remove("my_file.txt")
-else:
-    print("the file does not exist")
+outputfile = open("Codingal.txt",'w')
+inputfile = open("mowaffa.txt",'r')
+lines_seen_so_far = set()
+print("elimanating duplicate lines")
+for line in inputfile:
+    if line not in lines_seen_so_far:
+        outputfile.write(line)
         
-    
-new_file =('new file.txt','w')
-new_file.write("hi i am a pengin and i am i yeas old")
-new_file.close()
-os.remove('codingal.txt')
+lines_seen_so_far.add(line)
+outputfile.close()
+inputfile.close()
