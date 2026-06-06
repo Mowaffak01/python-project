@@ -1,11 +1,15 @@
-with open('Codingal.txt','w')as file:
- file.write("hi there i am a penguin and i am 1 years old. ")
- file.close
- 
- with open('Codingal.txt','r')as file:
-     data = file.readlines()
-     print("words in this file are")
-     for line in data:
-      word  = line.split()
-      print(word)
-      file.close
+new_file =('new_file.txt','x')
+new_file.close()
+
+import os
+print("checking if file exists or not........")
+if os.path.exists("my_file.txt"):
+    os.remove("my_file.txt")
+else:
+    print("the file does not exist")
+        
+    
+new_file =('new file.txt','w')
+new_file.write("hi i am a pengin and i am i yeas old")
+new_file.close()
+os.remove('codingal.txt')
