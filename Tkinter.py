@@ -1,19 +1,18 @@
-from tkinter import *
+import Tkinter as tk
 
-window = Tk()
-window.title('Tkinter sample window')
-window.geometry('300x300')
+window=tk.Tk()
 
-greeting = Label(text='hi user',fg='black', bg='white')
-button = Button(text='click me',fg='black', bg='white')
-entry = Entry(fg='yellow',bg='blue', width=50)
-greeting.pack()
-button.pack()
-entry.pack()
-frame = Frame(master=window , relief=RAISED, borderwidth=5)
-frame.pack()
-label = Label(master=frame, text='sample frame')
-label.pack()
-textbox= Text(fg='green',bg='yellow')
-textbox.pack()
+for i in range(3):
+    for j in range(3):
+        frame = tk.Frame(
+            master=window,
+            relief=tk.RASIED,
+            borderwidth=1
+                       
+        )
+frame.grid(row=i,collum=j,padx=5,padx=5)
+label = tk.label(master=frame,text=f"Row{i}\ncollum{j}")
+label.pack
+
 window.mainloop()
+           
