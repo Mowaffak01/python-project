@@ -1,16 +1,18 @@
-from math import sqrt
-
-number = int(input("Enter your number : "))
-print("\n")
-
-if number > 1:
-    
-    for i in range(2,int(sqrt(number))+1):
-        if (number % i) ==0:
-            print(number,"is not a prime number")
-            break
-        else:
-          print(number,"is a prime number")  
+def sieveoferatosthemes(number):
+    prime = [True for i in range(number+ 1)]
+    p = 2
+    while ( p*p <= number ):
+        if (prime[p] == True):
+            for i in range (p*p,number + 1 ,p):
+                prime[i] = False
+                p += 1
                 
-    else:
-        print(number,"is not a prime number") 
+                for p in range  (2,number +1):
+                    if prime [p]:
+                        print(p)
+                    number= int(input("Enter a number : "))
+                    print("following are prime number smallest")
+                    print("than or equal to",number)
+                    sieveoferatosthemes(number)
+    
+                
