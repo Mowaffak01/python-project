@@ -1,0 +1,7 @@
+input("XOR sign detection - n ^ m < 0 means different signs.  Press Enter")
+print("4^2 =",4 ^ 2 ,"same signs")
+print("4^-2 =",4 ^ -2 ,"diffrent signs")
+n = int(input("Enter a number (Try 5 or -3 )"))
+guess = input("will" + str(n) + "^-8 be positive or negative ?")  
+input("XOR is negative when signs differ . Press enter")
+print("",n,"^-8=",n^-8,"your guess:",guess)
